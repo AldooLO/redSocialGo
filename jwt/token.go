@@ -27,7 +27,7 @@ func ProcesoToken(tk string, JWTSing string) (*models.Claim, bool, string, error
 	})
 
 	if err == nil {
-
+		//rutina que chequea la bd
 	}
 
 	if !tkn.Valid{
