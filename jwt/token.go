@@ -2,8 +2,6 @@ package jwt
 
 import (
 	"errors"
-	"go/token"
-	"redSocialGo/bd"
 	"redSocialGo/models"
 	"strings"
 
