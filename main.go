@@ -33,7 +33,7 @@ func EjecutoLambda(ctx context.Context, request events.APIGatewayProxyRequest) (
 		return res, nil
 	}
 
-	SecretModel, err := secretmanager.GetSecret(os.Getenv("SecretName"))
+	_, err := secretmanager.GetSecret(os.Getenv("SecretName"))
 	if err != nil {
 		res = &events.APIGatewayProxyResponse{
 			StatusCode: 400,
